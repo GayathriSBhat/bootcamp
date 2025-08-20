@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gayathri-hello"  
+version = "0.1.1"
+description = "A simple hello module that greets a passed argument or world by default"
+authors = [
+  { name = "Your Name", email = "your.email@example.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.6"
+keywords = ["hello", "greeting", "example"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+urls = { "Homepage" = "https://test.pypi.org/project/gayathri-hello/" }
+dependencies = [
+    "build>=0.9.0",
+    "twine>=3.8.0",
+]
+
+[project.scripts]
+gayathri-hello = "yourname_hello.main:say_hello"  # Adjust to your package and function
+
