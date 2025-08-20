@@ -1,0 +1,9 @@
+[project]
+name = "gayathri-hello-rich"
+version = "0.1.2"
+description = "A rich-enhanced hello world"
+readme = "README.md"
+requires-python = ">=3.9"
+
+[project.dependencies]
+rich = "*"
