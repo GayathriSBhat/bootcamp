@@ -1,9 +1,16 @@
 [project]
 name = "gayathri-hello-rich"
-version = "0.1.2"
+version = "0.2.0"
 description = "A rich-enhanced hello world"
 readme = "README.md"
 requires-python = ">=3.9"
 
-[project.dependencies]
-rich = "*"
+dependencies = [
+    "rich",
+]
+
+[project.scripts]
+hello = "gayathri_hello.hello:say_hello"  # Adjust to your package and function
+
+[tool.setuptools.packages.find]
+include = ["gayathri_hello"]

@@ -1,16 +1,16 @@
 [project]
 name = "gayathri-hello-cli"
-version = "0.1.0"
+version = "0.3.0"
 description = "A typer-based CLI hello world"
 readme = "README.md"
 requires-python = ">=3.9"
+
 dependencies = [
     "rich",
     "typer>=0.16.1",
 ]
 
 [project.scripts]
-hello-cli = "gayathri-hello.cli:app"
+hello-cli = "cli:app"
 
-[tool.uv.sources]
-typer = { path = "C:/Users/gayat/Downloads/typer-0.16.1-py3-none-any.whl" }
+
